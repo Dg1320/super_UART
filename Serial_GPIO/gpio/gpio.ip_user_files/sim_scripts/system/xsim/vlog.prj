@@ -1,0 +1,29 @@
+verilog xil_defaultlib --include "/media/clutch13/SOC/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../gpio.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../gpio.gen/sources_1/bd/system/ipshared/b28c/hdl" \
+"../../../bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" \
+
+sv xil_defaultlib --include "/media/clutch13/SOC/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../gpio.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../gpio.gen/sources_1/bd/system/ipshared/b28c/hdl" \
+"../../../bd/system/ipshared/385b/hdl/gpio_slave_lite_v1_0_AXI.v" \
+"../../../bd/system/ipshared/385b/hdl/gpio.v" \
+
+verilog xil_defaultlib --include "/media/clutch13/SOC/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../gpio.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../gpio.gen/sources_1/bd/system/ipshared/b28c/hdl" \
+"../../../bd/system/ip/system_gpio_0_0/sim/system_gpio_0_0.v" \
+"../../../bd/system/ip/system_xbar_0/sim/system_xbar_0.v" \
+"../../../bd/system/ip/system_xlconcat_0_0/sim/system_xlconcat_0_0.v" \
+
+sv xil_defaultlib --include "/media/clutch13/SOC/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../gpio.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../gpio.gen/sources_1/bd/system/ipshared/b28c/hdl" \
+"../../../bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v" \
+"../../../bd/system/ipshared/09f4/my9x16_FIFO.sv" \
+"../../../bd/system/ipshared/09f4/baudRateDivider.sv" \
+"../../../bd/system/ipshared/09f4/src/receiver.sv" \
+"../../../bd/system/ipshared/09f4/src/transmitter.sv" \
+
+verilog xil_defaultlib --include "/media/clutch13/SOC/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../gpio.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../gpio.gen/sources_1/bd/system/ipshared/b28c/hdl" \
+"../../../bd/system/ipshared/09f4/hdl/serial.v" \
+"../../../bd/system/ip/system_serial_0_10/sim/system_serial_0_10.v" \
+"../../../bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" \
+"../../../bd/system/sim/system.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

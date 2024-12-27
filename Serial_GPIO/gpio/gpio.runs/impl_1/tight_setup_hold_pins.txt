@@ -1,0 +1,26 @@
++====================+===================+==============================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                          |
++====================+===================+==============================================================================+
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[50]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[47]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[46]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[43]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[42]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[39]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[38]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[35]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[34]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[31]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[30]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[27]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[26]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[23]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[22]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[19]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[18]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[15]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[14]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[11]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[10]/D |
+| clk_fpga_0         | clk_fpga_0        | system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myBRD/keepCount_reg[7]/D  |
++--------------------+-------------------+------------------------------------------------------------------------------+

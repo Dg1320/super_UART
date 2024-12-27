@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Dec  3 19:00:57 2024
+# Process ID: 69865
+# Current directory: /media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.runs/system_serial_0_10_synth_1
+# Command line: vivado -log system_serial_0_10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_serial_0_10.tcl
+# Log file: /media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.runs/system_serial_0_10_synth_1/system_serial_0_10.vds
+# Journal file: /media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.runs/system_serial_0_10_synth_1/vivado.jou
+# Running On        :clutch13
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-4610M CPU @ 3.00GHz
+# CPU Frequency     :3690.344 MHz
+# CPU Physical cores:2
+# CPU Logical cores :4
+# Host memory       :16671 MB
+# Swap memory       :2147 MB
+# Total Virtual     :18818 MB
+# Available Virtual :13688 MB
+#-----------------------------------------------------------
+source system_serial_0_10.tcl -notrace

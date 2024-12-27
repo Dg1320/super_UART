@@ -1,0 +1,1 @@
+cmd_/home/uta/C/gpio/gpio_isr.ko := ld -r -EL -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/uta/C/gpio/gpio_isr.ko /home/uta/C/gpio/gpio_isr.o /home/uta/C/gpio/gpio_isr.mod.o;  true

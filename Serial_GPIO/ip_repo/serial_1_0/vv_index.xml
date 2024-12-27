@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Index Version="1" Minor="0">
+	<Repository value="/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/ip_repo/serial_1_0">
+	</Repository>
+	<IP>
+		<VLNV value="user.org:user:serial:1.0">
+		</VLNV>
+		<DisplayName value="serial_v1.0">
+		</DisplayName>
+		<Description value="My new AXI IP">
+		</Description>
+		<CoreRevision value="278">
+		</CoreRevision>
+		<ComponentPath value="component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="zynq">
+				<Part status="Pre-Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="AXI_Peripheral">
+			</Taxonomy>
+		</Taxonomies>
+		<LockPrevVersions value="false">
+		</LockPrevVersions>
+		<Interfaces>
+			<Interface value="AXI4">
+			</Interface>
+		</Interfaces>
+	</IP>
+</Index>
+

@@ -1,0 +1,67 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Tue Dec  3 19:04:43 2024
+| Host         : clutch13 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_drc -file gpio_system_top_drc_routed.rpt -pb gpio_system_top_drc_routed.pb -rpx gpio_system_top_drc_routed.rpx
+| Design       : gpio_system_top
+| Device       : xc7z007sclg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
++----------+----------+---------------------------------+------------+
+| Rule     | Severity | Description                     | Violations |
++----------+----------+---------------------------------+------------+
+| PDRC-153 | Warning  | Gated clock check               | 2          |
+| RPBF-3   | Warning  | IO port buffering is incomplete | 4          |
++----------+----------+---------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myReceiver/determinedBit_reg/G0 is a gated clock net sourced by a combinational pin system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myReceiver/determinedBit_reg/L3_2/O, cell system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myReceiver/determinedBit_reg/L3_2 (in system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myReceiver/determinedBit_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myReceiver/rxParityCheck__0 is a gated clock net sourced by a combinational pin system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myReceiver/rxParityCheck_reg_i_2/O, cell system/system_i/serial_0/inst/serial_v1_0_AXI_inst/myReceiver/rxParityCheck_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port GPIO[0] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#2 Warning
+IO port buffering is incomplete  
+Device port GPIO[1] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#3 Warning
+IO port buffering is incomplete  
+Device port GPIO[2] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#4 Warning
+IO port buffering is incomplete  
+Device port GPIO[3] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+

@@ -1,0 +1,479 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Dec  3 19:00:57 2024
+# Process ID: 69865
+# Current directory: /media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.runs/system_serial_0_10_synth_1
+# Command line: vivado -log system_serial_0_10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_serial_0_10.tcl
+# Log file: /media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.runs/system_serial_0_10_synth_1/system_serial_0_10.vds
+# Journal file: /media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.runs/system_serial_0_10_synth_1/vivado.jou
+# Running On        :clutch13
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-4610M CPU @ 3.00GHz
+# CPU Frequency     :3690.344 MHz
+# CPU Physical cores:2
+# CPU Logical cores :4
+# Host memory       :16671 MB
+# Swap memory       :2147 MB
+# Total Virtual     :18818 MB
+# Available Virtual :13688 MB
+#-----------------------------------------------------------
+source system_serial_0_10.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1420.070 ; gain = 0.023 ; free physical = 5762 ; free virtual = 12729
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/ip_repo/serial_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/ip_repo/gpio_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/clutch13/SOC/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_serial_0_10
+Command: synth_design -top system_serial_0_10 -part xc7z007sclg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 69918
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2123.059 ; gain = 412.746 ; free physical = 4680 ; free virtual = 11648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'write_request', assumed default net type 'wire' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:23]
+INFO: [Synth 8-11241] undeclared symbol 'read_request', assumed default net type 'wire' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:24]
+WARNING: [Synth 8-8895] 'write_request' is already implicitly declared on line 23 [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:26]
+WARNING: [Synth 8-8895] 'read_request' is already implicitly declared on line 24 [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:27]
+INFO: [Synth 8-6157] synthesizing module 'system_serial_0_10' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ip/system_serial_0_10/synth/system_serial_0_10.v:53]
+INFO: [Synth 8-6157] synthesizing module 'serial' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial.v:4]
+INFO: [Synth 8-6157] synthesizing module 'serial_v1_0_AXI' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:11]
+INFO: [Synth 8-6157] synthesizing module 'baudRateDivider' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/baudRateDivider.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'baudRateDivider' (0#1) [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/baudRateDivider.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'transmitter' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/transmitter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'edge_detect' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:603]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detect' (0#1) [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:603]
+INFO: [Synth 8-155] case statement is not full and has no default [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/transmitter.sv:135]
+INFO: [Synth 8-6155] done synthesizing module 'transmitter' (0#1) [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/transmitter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'my9x16Fifo' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'my9x16Fifo' (0#1) [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:1]
+WARNING: [Synth 8-689] width (32) of port connection 'wr_data' does not match port width (9) of module 'my9x16Fifo' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:468]
+INFO: [Synth 8-6157] synthesizing module 'receiver' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:21]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:88]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:88]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:88]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:89]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:89]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:89]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:90]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:90]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:90]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:91]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:91]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:134]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:171]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:188]
+WARNING: [Synth 8-324] index 2 out of range [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:226]
+INFO: [Synth 8-155] case statement is not full and has no default [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:103]
+INFO: [Synth 8-6155] done synthesizing module 'receiver' (0#1) [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:21]
+WARNING: [Synth 8-7071] port 'secondStop' of module 'receiver' is unconnected for instance 'myReceiver' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:495]
+WARNING: [Synth 8-7023] instance 'myReceiver' of module 'receiver' has 13 connections declared, but only 12 given [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:495]
+INFO: [Synth 8-6155] done synthesizing module 'serial_v1_0_AXI' (0#1) [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'serial' (0#1) [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'system_serial_0_10' (0#1) [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ip/system_serial_0_10/synth/system_serial_0_10.v:53]
+WARNING: [Synth 8-6014] Unused sequential element testIdle_reg was removed.  [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/transmitter.sv:142]
+WARNING: [Synth 8-87] always_comb on 'latchData_reg' did not result in combinational logic [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/transmitter.sv:117]
+WARNING: [Synth 8-87] always_comb on 'mySize_reg' did not result in combinational logic [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/transmitter.sv:123]
+WARNING: [Synth 8-3848] Net myParityBit in module/entity transmitter does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/transmitter.sv:94]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[15] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[14] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[13] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[12] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[11] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[10] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[9] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[8] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[7] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[6] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[5] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[4] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[3] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[2] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[1] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-3848] Net myFIFO_DATA[0] in module/entity my9x16Fifo does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/my9x16_FIFO.sv:18]
+WARNING: [Synth 8-87] always_comb on 'mySize_reg' did not result in combinational logic [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:52]
+WARNING: [Synth 8-87] always_comb on 'determinedBit_reg' did not result in combinational logic [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:84]
+WARNING: [Synth 8-87] always_comb on 'rxParityCheck_reg' did not result in combinational logic [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:265]
+WARNING: [Synth 8-3848] Net TX_INTERRUPT_STATUS in module/entity serial_v1_0_AXI does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:142]
+WARNING: [Synth 8-3848] Net sendRxInterrupt in module/entity serial_v1_0_AXI does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:540]
+WARNING: [Synth 8-3848] Net txBaud in module/entity serial_v1_0_AXI does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:28]
+WARNING: [Synth 8-3848] Net baudTick in module/entity serial_v1_0_AXI does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:29]
+WARNING: [Synth 8-3848] Net tx_intr in module/entity serial_v1_0_AXI does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:31]
+WARNING: [Synth 8-3848] Net status_DEBUG_OUT in module/entity serial_v1_0_AXI does not have driver. [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/hdl/serial_slave_lite_v1_0_AXI.v:143]
+WARNING: [Synth 8-7129] Port myFIFO_DATA[15][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[15][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[15][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[15][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[15][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[15][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[15][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[15][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[15][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[14][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[14][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[14][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[14][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[14][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[14][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[14][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[14][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[14][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[13][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[13][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[13][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[13][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[13][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[13][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[13][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[13][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[13][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[12][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[12][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[12][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[12][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[12][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[12][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[12][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[12][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[12][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[11][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[11][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[11][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[11][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[11][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[11][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[11][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[11][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[11][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[10][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[10][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[10][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[10][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[10][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[10][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[10][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[10][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[10][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[9][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[9][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[9][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[9][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[9][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[9][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[9][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[9][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[9][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[8][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[8][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[8][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[8][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[8][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[8][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[8][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[8][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[8][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[7][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[7][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[7][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[7][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[7][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[7][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[7][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[7][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[7][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[6][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[6][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[6][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[6][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[6][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[6][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[6][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[6][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[6][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[5][8] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[5][7] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[5][6] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[5][5] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[5][4] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[5][3] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[5][2] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[5][1] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[5][0] in module my9x16Fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port myFIFO_DATA[4][8] in module my9x16Fifo is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2211.996 ; gain = 501.684 ; free physical = 4576 ; free virtual = 11541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2226.840 ; gain = 516.527 ; free physical = 4566 ; free virtual = 11515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2226.840 ; gain = 516.527 ; free physical = 4566 ; free virtual = 11515
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2226.840 ; gain = 0.000 ; free physical = 4564 ; free virtual = 11514
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2375.590 ; gain = 0.000 ; free physical = 4606 ; free virtual = 11573
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2375.590 ; gain = 0.000 ; free physical = 4603 ; free virtual = 11572
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4602 ; free virtual = 11558
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4602 ; free virtual = 11558
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4602 ; free virtual = 11558
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'txState_reg' in module 'transmitter'
+INFO: [Synth 8-802] inferred FSM for state register 'rxState_reg' in module 'receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 TX_IDLE |                              000 |                             0000
+               TX_PARITY |                              001 |                             0011
+                 TX_DATA |                              010 |                             0010
+                TX_STOP1 |                              011 |                             0100
+                TX_STOP2 |                              100 |                             0101
+                TX_START |                              101 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txState_reg' using encoding 'sequential' in module 'transmitter'
+WARNING: [Synth 8-327] inferring latch for variable 'mySize_reg' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/transmitter.sv:123]
+WARNING: [Synth 8-327] inferring latch for variable 'latchData_reg' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/transmitter.sv:117]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_IDLE |                           000001 |                              000
+                RX_START |                           000010 |                              001
+                 RX_DATA |                           000100 |                              010
+               RX_PARITY |                           001000 |                              011
+                RX_STOP1 |                           010000 |                              100
+                RX_STOP2 |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rxState_reg' using encoding 'one-hot' in module 'receiver'
+WARNING: [Synth 8-327] inferring latch for variable 'mySize_reg' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:52]
+WARNING: [Synth 8-327] inferring latch for variable 'determinedBit_reg' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:84]
+WARNING: [Synth 8-327] inferring latch for variable 'rxParityCheck_reg' [/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.gen/sources_1/bd/system/ipshared/09f4/src/receiver.sv:265]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4580 ; free virtual = 11534
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 4     
+	   3 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 1     
+	   8 Input    1 Bit       Adders := 1     
+	   7 Input    1 Bit       Adders := 1     
+	   6 Input    1 Bit       Adders := 1     
+	   5 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                9 Bit    Registers := 33    
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 107   
+	   6 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	  19 Input    6 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 7     
+	   4 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	  65 Input    3 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 119   
+	   6 Input    1 Bit        Muxes := 18    
+	   4 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (mySize_reg[3]) is unused and will be removed from module transmitter.
+WARNING: [Synth 8-3332] Sequential element (mySize_reg[2]) is unused and will be removed from module transmitter.
+WARNING: [Synth 8-3332] Sequential element (mySize_reg[1]) is unused and will be removed from module transmitter.
+WARNING: [Synth 8-3332] Sequential element (mySize_reg[0]) is unused and will be removed from module transmitter.
+WARNING: [Synth 8-3332] Sequential element (mySize_reg[3]) is unused and will be removed from module receiver.
+WARNING: [Synth 8-3332] Sequential element (mySize_reg[2]) is unused and will be removed from module receiver.
+WARNING: [Synth 8-3332] Sequential element (mySize_reg[1]) is unused and will be removed from module receiver.
+WARNING: [Synth 8-3332] Sequential element (mySize_reg[0]) is unused and will be removed from module receiver.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4558 ; free virtual = 11522
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4537 ; free virtual = 11492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4534 ; free virtual = 11492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4538 ; free virtual = 11492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4534 ; free virtual = 11492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4534 ; free virtual = 11492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4534 ; free virtual = 11492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4534 ; free virtual = 11492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4531 ; free virtual = 11492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4531 ; free virtual = 11492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   247|
+|2     |LUT1   |    99|
+|3     |LUT2   |   124|
+|4     |LUT3   |   724|
+|5     |LUT4   |   368|
+|6     |LUT5   |    37|
+|7     |LUT6   |   206|
+|8     |FDRE   |   578|
+|9     |FDSE   |     2|
+|10    |LD     |    10|
+|11    |LDCP   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2375.590 ; gain = 665.277 ; free physical = 4531 ; free virtual = 11492
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 168 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2375.590 ; gain = 516.527 ; free physical = 4531 ; free virtual = 11492
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 2375.598 ; gain = 665.277 ; free physical = 4531 ; free virtual = 11492
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2375.598 ; gain = 0.000 ; free physical = 4926 ; free virtual = 11875
+INFO: [Netlist 29-17] Analyzing 258 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2375.598 ; gain = 0.000 ; free physical = 4935 ; free virtual = 11896
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  LD => LDCE: 10 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
+
+Synth Design complete | Checksum: ebfd3d0f
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 163 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:39 . Memory (MB): peak = 2375.598 ; gain = 955.527 ; free physical = 4932 ; free virtual = 11896
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1984.056; main = 1548.484; forked = 482.275
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3496.578; main = 2375.594; forked = 1120.984
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2399.602 ; gain = 0.000 ; free physical = 4931 ; free virtual = 11895
+INFO: [Common 17-1381] The checkpoint '/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.runs/system_serial_0_10_synth_1/system_serial_0_10.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_serial_0_10, cache-ID = d813ffd67d791460
+INFO: [Coretcl 2-1174] Renamed 15 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2399.602 ; gain = 0.000 ; free physical = 4894 ; free virtual = 11853
+INFO: [Common 17-1381] The checkpoint '/media/clutch13/SOC/soc_projects/SoC/Serial_GPIO/gpio/gpio.runs/system_serial_0_10_synth_1/system_serial_0_10.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_serial_0_10_utilization_synth.rpt -pb system_serial_0_10_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 19:01:50 2024...

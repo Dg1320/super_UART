@@ -1,0 +1,1 @@
+cmd_/home/uta/C/qe/qe_driver.ko := ld -r -EL -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/uta/C/qe/qe_driver.ko /home/uta/C/qe/qe_driver.o /home/uta/C/qe/qe_driver.mod.o;  true

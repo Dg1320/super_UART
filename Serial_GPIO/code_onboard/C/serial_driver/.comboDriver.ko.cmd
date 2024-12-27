@@ -1,0 +1,1 @@
+cmd_/home/uta/C/combo_driver/comboDriver.ko := ld -r -EL -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/uta/C/combo_driver/comboDriver.ko /home/uta/C/combo_driver/comboDriver.o /home/uta/C/combo_driver/comboDriver.mod.o;  true
